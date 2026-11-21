@@ -196,11 +196,21 @@ a{color:inherit}
 @keyframes pulso{0%{transform:scale(.85);opacity:0}40%{opacity:1}100%{transform:scale(1.25);opacity:0}}
 .filme__play svg{width:30px;height:30px;fill:var(--champ-aceso);margin-left:5px}
 .filme__info{margin-top:var(--s-3);display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--s-2);color:var(--nevoa);font-size:var(--t-16)}
-.filme__roteiro{margin-top:var(--s-8);display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s-3)}
+.filme__roteiro{margin-top:var(--s-8);display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s-3)}
 .filme__roteiro li{list-style:none;border-top:1px solid var(--linha);padding-top:var(--s-2);display:grid;gap:6px}
 .filme__roteiro b{font-variant-numeric:tabular-nums;color:var(--champ-aceso);font-size:var(--t-14)}
 .filme__roteiro span{font-size:var(--t-16);color:var(--nevoa)}
-@media (max-width:860px){.filme__tela{aspect-ratio:16/10}.filme__roteiro{grid-template-columns:1fr 1fr}}
+@media (max-width:860px){.filme__tela{aspect-ratio:2.39/1}.filme__roteiro{grid-template-columns:1fr}}
+
+
+.painel.tem-video .slot{align-content:end;background:linear-gradient(180deg,rgba(0,0,0,.45) 0%,transparent 22%,transparent 50%,rgba(0,0,0,.78) 100%)}
+.painel.tem-video .slot::before,.painel.tem-video .slot::after,.painel.tem-video .slot__tag{display:none}
+.painel.tem-video .slot__beat p{text-shadow:0 1px 12px rgba(0,0,0,.6)}
+.filme__video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#000}
+.filme__capa{position:absolute;inset:0;display:grid;place-items:center;align-content:center;gap:var(--s-3);background:radial-gradient(60% 70% at 50% 50%,rgba(0,0,0,.15),rgba(0,0,0,.55));cursor:pointer;border:0;color:var(--pergaminho);font:inherit;transition:opacity 700ms var(--ease)}
+.filme__capa span{font-size:var(--t-14);letter-spacing:.04em}
+.filme__tela.is-tocando .filme__capa{opacity:0;pointer-events:none}
+@media (max-width:860px){.filme__video{object-fit:contain}}
 
 /* 6. services */
 .servicos__lista{margin-top:var(--s-10);border-top:1px solid var(--linha-clara)}
@@ -307,24 +317,27 @@ a{color:inherit}
   <div class="triptico__fixo">
     <div class="triptico__topo"><h2 id="triptico-titulo">One coffee. Three productions.</h2><p>Scroll to play all three films at once.</p></div>
     <div class="paineis">
-      <article class="painel" data-nivel="1" aria-label="Amateur production">
+      <article class="painel tem-video" data-nivel="1" aria-label="Amateur production">
         <!-- VIDEO SLOT 1: amateur, 9:16, scrubbed by scroll. Put <video class="painel__midia" muted playsinline preload="auto" src="..."> here -->
+        <video class="painel__midia" muted playsinline preload="auto" poster="https://d2ol7oe51mr4n9.cloudfront.net/user_3JBKi6VaeH9JlCBE9aqtrnAOk5G/12bab34d-7744-4975-96ef-1f9077df8b2c.jpg" src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JBKi6VaeH9JlCBE9aqtrnAOk5G/e8cdfa12-7c85-4c1d-a437-f58c66e260eb.mp4"></video>
         <div class="slot"><span class="slot__tag">Video slot 1 &#xB7; 9:16</span>
           <div class="slot__cena"><span class="slot__n" data-beat-n>Scene 1 of 3</span>
             <div class="slot__beat"><p class="is-on">Bag on a messy desk, phone flash, crooked frame.</p><p>A shaky pour into a chipped mug. Kitchen light.</p><p>Blurry close-up of the beans. Ends on a thumb over the lens.</p></div></div></div>
         <span class="painel__tc" data-tc>00:00</span>
         <div class="painel__rotulo"><b>Amateur</b><span>Phone on the counter</span></div>
       </article>
-      <article class="painel" data-nivel="2" aria-label="Basic production">
+      <article class="painel tem-video" data-nivel="2" aria-label="Basic production">
         <!-- VIDEO SLOT 2: decent but plain, 9:16, scrubbed by scroll -->
+        <video class="painel__midia" muted playsinline preload="auto" poster="https://d2ol7oe51mr4n9.cloudfront.net/user_3JBKi6VaeH9JlCBE9aqtrnAOk5G/ee415b27-1544-48be-a729-a3d5f0f4fb60.jpg" src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JBKi6VaeH9JlCBE9aqtrnAOk5G/7f8ecf34-0a66-49b4-ac8c-d2e4fc7994e1.mp4"></video>
         <div class="slot"><span class="slot__tag">Video slot 2 &#xB7; 9:16</span>
           <div class="slot__cena"><span class="slot__n" data-beat-n>Scene 1 of 3</span>
             <div class="slot__beat"><p class="is-on">Bag on a white sheet by the window. Flat daylight.</p><p>A steady pour, but nothing to feel.</p><p>Bag next to a cup. Correct, forgettable.</p></div></div></div>
         <span class="painel__tc" data-tc>00:00</span>
         <div class="painel__rotulo"><b>Basic</b><span>Clean, but forgettable</span></div>
       </article>
-      <article class="painel" data-nivel="3" aria-label="Kesis production">
+      <article class="painel tem-video" data-nivel="3" aria-label="Kesis production">
         <!-- VIDEO SLOT 3: Kesis cinematic, 9:16, scrubbed by scroll -->
+        <video class="painel__midia" muted playsinline preload="auto" poster="https://d2ol7oe51mr4n9.cloudfront.net/user_3JBKi6VaeH9JlCBE9aqtrnAOk5G/15f88f59-15a5-4087-8b0d-e8590d08b39b.jpg" src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JBKi6VaeH9JlCBE9aqtrnAOk5G/e1e2b005-f926-4448-8635-df56db2f2c9c.mp4"></video>
         <div class="slot"><span class="slot__tag">Video slot 3 &#xB7; 9:16</span>
           <div class="slot__cena"><span class="slot__n" data-beat-n>Scene 1 of 3</span>
             <div class="slot__beat"><p class="is-on">Dawn over the coffee hills. Mist, first light.</p><p>Beans tumbling in the roaster. Sparks of amber light.</p><p>Slow-motion pour, steam in the backlight. The bag on walnut, morning sun.</p></div></div></div>
@@ -375,15 +388,15 @@ a{color:inherit}
     <p class="sobretitulo revela">The film</p>
     <h2 class="titulo" id="filme-titulo" data-split>From one photo to <b>a film that moves people.</b></h2>
     <div class="filme__tela" id="filme-tela">
-      <!-- VIDEO SLOT 4: emotional cinematic film, 2.39:1, plays with sound on click -->
-      <div class="slot"><span class="slot__tag">Video slot 4 &#xB7; 2.39:1 &#xB7; 45 to 60 seconds</span><span class="filme__play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></svg></span><span style="color:var(--nevoa);font-size:var(--t-14)">Cinematic coffee film plays here</span></div>
+      <!-- VIDEO SLOT 4: cinematic film, 2.39:1 -->
+      <video class="filme__video" id="filme-video" playsinline preload="metadata" poster="https://d2ol7oe51mr4n9.cloudfront.net/user_3JBKi6VaeH9JlCBE9aqtrnAOk5G/bc0c20eb-af01-4d37-870a-da9099515c4d.jpg" src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JBKi6VaeH9JlCBE9aqtrnAOk5G/20b427af-7a96-4880-bb4e-a6fde3b8a978.mp4"></video>
+      <button class="filme__capa" id="filme-capa" type="button" aria-label="Play the film with sound"><span class="filme__play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></svg></span><span>Play with sound</span></button>
     </div>
-    <div class="filme__info"><span>Directed by Kesis Studio from one phone photo</span><span>Sound on recommended</span></div>
+    <div class="filme__info"><span>Serra Alta is a demo brand we created to show the process.</span><span>Sound on recommended</span></div>
     <ol class="filme__roteiro">
-      <li class="revela"><b>00:00</b><span>A farmer's hands in the morning mist.</span></li>
-      <li class="revela" style="--atraso:100ms"><b>00:15</b><span>Roasting: fire, sound, the first crack.</span></li>
-      <li class="revela" style="--atraso:200ms"><b>00:30</b><span>A kitchen at dawn. The pour, the steam.</span></li>
-      <li class="revela" style="--atraso:300ms"><b>00:45</b><span>The bag on the table. Your name. Your morning.</span></li>
+      <li class="revela"><b>00:00</b><span>Dawn on the farm. A farmer's hands, ripe cherries.</span></li>
+      <li class="revela" style="--atraso:100ms"><b>00:14</b><span>A kitchen at sunrise. The grind, the bloom, the pour.</span></li>
+      <li class="revela" style="--atraso:200ms"><b>00:28</b><span>The bag on the table. Your name. Your morning.</span></li>
     </ol>
   </div>
 </section>
@@ -537,13 +550,13 @@ a{color:inherit}
       const beat = Math.min(e.beats.length - 1, Math.floor(filmeP * e.beats.length * .999));
       if (beat !== e.atual) { e.beats[e.atual].classList.remove('is-on'); e.beats[beat].classList.add('is-on'); e.atual = beat; if (e.n) e.n.textContent = 'Scene ' + (beat + 1) + ' of ' + e.beats.length; }
       e.tc.textContent = '00:' + pad(s);
-      if (e.video && e.video.readyState >= 1 && e.video.duration) { const alvoT = filmeP * (e.video.duration - .05); e.vt += (alvoT - e.vt) * .2; if (Math.abs(e.video.currentTime - e.vt) > .01) { try { e.video.currentTime = e.vt; } catch (err) {} } }
+      if (e.video && e.video.readyState >= 1 && e.video.duration) { const alvoT = filmeP * (e.video.duration - .05); if (Math.abs(e.video.currentTime - alvoT) > .02) { try { e.video.currentTime = alvoT; } catch (err) {} } }
     });
     const f = sstep(.86, .96, p);
     fim.style.opacity = f.toFixed(3);
     paineis.forEach((el, i) => { el.style.filter = f > 0 ? 'brightness(' + (1 - f * .45).toFixed(3) + ')' : ''; });
   }
-  estadoPainel.forEach((e) => { if (e.video) { e.video.pause(); e.video.addEventListener('loadeddata', () => e.video.pause()); } });
+  estadoPainel.forEach((e) => { if (e.video) { e.video.pause(); e.video.addEventListener('loadedmetadata', () => { e.video.pause(); triptico(progresso(trip)); }); } });
 
   // ===== words light up with scroll =====
   const palavras = [];
@@ -607,6 +620,11 @@ a{color:inherit}
 
   // ===== anchors travel smoothly =====
   $$('a[href^="#"]').forEach((a) => a.addEventListener('click', (e) => { const id = a.getAttribute('href'); const alvo = id.length > 1 && $(id); if (!alvo) return; e.preventDefault(); Rolagem.irPara(alvo.getBoundingClientRect().top + scrollY - (id === '#diferenca' ? 0 : 40)); }));
+
+
+  // ===== film: play with sound on click =====
+  const fv = $('#filme-video'), fc = $('#filme-capa');
+  if (fv && fc) { fc.addEventListener('click', () => { tela.classList.add('is-tocando'); fv.controls = true; fv.muted = false; fv.play().catch(() => {}); }); fv.addEventListener('ended', () => { tela.classList.remove('is-tocando'); fv.controls = false; }); }
 
   // ===== copy email =====
   $('#copiar').addEventListener('click', function () { const b = this; navigator.clipboard.writeText('andre@kesis.com.br').then(() => { b.textContent = 'Copied'; setTimeout(() => { b.textContent = 'Copy address'; }, 1800); }, () => {}); });
