@@ -3,413 +3,494 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kesis Studio &#xB7; From phone photo to Christmas campaign</title>
-<meta name="description" content="Send us a phone photo of your product. Get scroll-stopping Christmas ads and short videos back in 48 hours. A small studio for independent brands.">
-<meta property="og:title" content="Kesis Studio &#xB7; From phone photo to Christmas campaign">
-<meta property="og:description" content="Your real product, styled properly. Ad images and short videos in 48 hours.">
+<title>Kesis Studio | From a phone photo to a film</title>
+<meta name="description" content="Kesis Studio turns a phone photo of your product into cinematic Christmas adverts and short films in 48 hours. For independent brands in the UK and US.">
+<meta property="og:title" content="Kesis Studio | From a phone photo to a film">
+<meta property="og:description" content="Send one phone photo. Get cinematic adverts and short films of your real product in 48 hours.">
 <meta property="og:image" content="https://d2ol7oe51mr4n9.cloudfront.net/user_3JBKi6VaeH9JlCBE9aqtrnAOk5G/b171bc6b-0ed3-4902-929c-ec38dc15452b.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://d2ol7oe51mr4n9.cloudfront.net" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="https://d2ol7oe51mr4n9.cloudfront.net/user_3JBKi6VaeH9JlCBE9aqtrnAOk5G/335104d7-f723-4549-81eb-480018f2333c.jpg">
 <style>
 :root{
-  --c-ink:#141210; --c-ink-2:#1E1B18; --c-ink-3:#2A2622;
-  --c-cream:#F4EEE4; --c-cream-2:#E7DED0; --c-muted:#A89F92;
-  --c-amber:#E8A33D; --c-amber-2:#F2BD6B; --c-pine:#2F4A3A; --c-line:rgba(244,238,228,.14);
-  --c-shade:rgba(20,18,16,.55); --c-shade-2:rgba(20,18,16,0);
-  --f-display:'Fraunces',Georgia,serif; --f-body:'Inter',system-ui,-apple-system,Segoe UI,sans-serif;
-  --fs-xs:12px; --fs-sm:14px; --fs-md:16px; --fs-lg:20px; --fs-xl:28px; --fs-2xl:40px; --fs-3xl:56px;
-  --fs-hero:clamp(32px,6vw,84px);
-  --s1:8px; --s2:16px; --s3:24px; --s4:32px; --s5:40px; --s6:48px; --s8:64px; --s10:80px; --s12:96px; --s16:128px;
-  --r-sm:8px; --r-md:16px; --r-lg:24px; --r-pill:999px;
-  --ease:cubic-bezier(.2,.7,.2,1); --dur:700ms; --dur-fast:240ms;
-  --maxw:1200px;
+  --green-900:#0D211C; --green-800:#12302A; --green-700:#1B4238; --green-line:rgba(239,232,218,.16);
+  --ivory:#EFE8DA; --ivory-dim:#C9C0AE;
+  --brass:#B48C5A; --brass-light:#D6B684;
+  --stone:#DDD4C5; --stone-2:#D2C8B7; --ink:#1C1915; --ink-dim:#4A433B;
+  --black:#050505;
+  --f-display:'Bodoni Moda',Didot,'Times New Roman',serif;
+  --f-text:'Jost','Futura','Century Gothic',system-ui,sans-serif;
+  --t-sm:15px; --t-md:18px; --t-lg:22px; --t-xl:30px; --t-2xl:44px; --t-3xl:64px;
+  --t-hero:clamp(40px,5.2vw,96px);
+  --s1:8px; --s2:16px; --s3:24px; --s4:32px; --s5:40px; --s6:48px; --s8:64px; --s10:80px; --s12:96px; --s16:128px; --s20:160px;
+  --ease-out:cubic-bezier(.16,1,.3,1); --ease-io:cubic-bezier(.65,0,.35,1);
+  --dur:900ms; --dur-fast:320ms;
+  --maxw:1240px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%}
-body{background:var(--c-ink);color:var(--c-cream);font-family:var(--f-body);font-size:var(--fs-md);line-height:1.6;-webkit-font-smoothing:antialiased}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+body{background:var(--green-900);color:var(--ivory);font-family:var(--f-text);font-weight:400;font-size:var(--t-md);line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 img,video{display:block;max-width:100%}
 a{color:inherit}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--s3)}
-.eyebrow{font-size:var(--fs-xs);letter-spacing:.18em;text-transform:uppercase;color:var(--c-amber);font-weight:600}
-h2{font-family:var(--f-display);font-weight:400;font-size:clamp(32px,4.4vw,var(--fs-3xl));line-height:1.08;letter-spacing:-.01em}
-h3{font-family:var(--f-display);font-weight:600;font-size:var(--fs-lg);line-height:1.3}
-p.lead{font-size:var(--fs-lg);color:var(--c-cream-2);max-width:640px}
-.btn{display:inline-flex;align-items:center;gap:var(--s1);padding:var(--s2) var(--s4);border-radius:var(--r-pill);font-weight:600;font-size:var(--fs-md);text-decoration:none;transition:transform var(--dur-fast) var(--ease),background var(--dur-fast) var(--ease)}
-.btn-primary{background:var(--c-amber);color:var(--c-ink)}
-.btn-primary:hover{background:var(--c-amber-2);transform:translateY(-2px)}
-.btn-ghost{border:1px solid var(--c-line);color:var(--c-cream)}
-.btn-ghost:hover{border-color:var(--c-amber);transform:translateY(-2px)}
-section{padding:var(--s16) 0}
-.section-head{display:grid;gap:var(--s2);margin-bottom:var(--s8)}
+:focus-visible{outline:2px solid var(--brass-light);outline-offset:4px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--s4)}
+@media (max-width:640px){.wrap{padding:0 var(--s3)}}
+.display{font-family:var(--f-display);font-weight:400;letter-spacing:-.015em;line-height:1.02}
+h2.display{font-size:clamp(40px,5.6vw,var(--t-3xl))}
+.lede{font-size:var(--t-lg);line-height:1.6;max-width:34em}
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:var(--s2);padding:18px 34px;border-radius:2px;font-family:var(--f-text);font-size:var(--t-md);font-weight:500;letter-spacing:.02em;text-decoration:none;cursor:pointer;will-change:transform;transition:background var(--dur-fast) var(--ease-out),color var(--dur-fast) var(--ease-out)}
+.btn-brass{background:var(--brass);color:var(--green-900)}
+.btn-brass:hover{background:var(--brass-light)}
+.btn-line{border:1px solid currentColor}
+.btn-line:hover{background:var(--ivory);color:var(--green-900)}
+
+/* grain: continuous, subtle */
+.grain{position:fixed;inset:-50%;z-index:90;pointer-events:none;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:grain 1.2s steps(6) infinite}
+@keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-4%,3%)}40%{transform:translate(3%,-5%)}60%{transform:translate(-6%,-2%)}80%{transform:translate(5%,4%)}100%{transform:translate(0,0)}}
 
 /* loader */
-#loader{position:fixed;inset:0;z-index:100;background:var(--c-ink);display:grid;place-items:center;transition:opacity 600ms var(--ease),visibility 600ms}
+#loader{position:fixed;inset:0;z-index:100;background:var(--green-900);display:grid;place-items:center;transition:opacity 900ms var(--ease-out),visibility 900ms}
 #loader.done{opacity:0;visibility:hidden}
-.loader-inner{display:grid;gap:var(--s2);justify-items:center}
-.loader-mark{font-family:var(--f-display);font-size:var(--fs-xl)}
-.loader-bar{width:160px;height:2px;background:var(--c-line);overflow:hidden;border-radius:2px}
-.loader-bar i{display:block;height:100%;width:40%;background:var(--c-amber);animation:load 1.1s var(--ease) infinite}
-@keyframes load{0%{transform:translateX(-100%)}100%{transform:translateX(260%)}}
+#loader .mark{font-family:var(--f-display);font-size:var(--t-2xl);font-style:italic;color:var(--ivory)}
+#loader .line{width:120px;height:1px;background:var(--green-line);margin:var(--s2) auto 0;overflow:hidden}
+#loader .line i{display:block;height:100%;width:100%;background:var(--brass);transform-origin:left;animation:fill 1.6s var(--ease-io) infinite}
+@keyframes fill{0%{transform:scaleX(0)}60%{transform:scaleX(1)}100%{transform:scaleX(1);opacity:0}}
 
 /* nav */
-nav.top{position:fixed;top:0;left:0;right:0;z-index:50;padding:var(--s2) 0;transition:background var(--dur-fast) var(--ease)}
-nav.top.solid{background:rgba(20,18,16,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--c-line)}
-nav.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:var(--s3)}
-.brand{font-family:var(--f-display);font-size:var(--fs-lg);font-weight:600;text-decoration:none;letter-spacing:.01em}
-.brand span{color:var(--c-amber)}
-.nav-links{display:flex;gap:var(--s4);align-items:center;font-size:var(--fs-sm)}
-.nav-links a{text-decoration:none;color:var(--c-cream-2)}
-.nav-links a:hover{color:var(--c-cream)}
-.nav-links .btn{padding:var(--s1) var(--s3);font-size:var(--fs-sm)}
-@media (max-width:760px){.nav-links a:not(.btn){display:none}}
+.nav{position:fixed;top:0;left:0;right:0;z-index:60;transition:background 500ms var(--ease-out),transform 500ms var(--ease-out)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:80px}
+.nav.solid{background:rgba(13,33,28,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.wordmark{font-family:var(--f-display);font-size:28px;font-style:italic;text-decoration:none;letter-spacing:0}
+.nav-links{display:flex;align-items:center;gap:var(--s5);font-size:var(--t-sm)}
+.nav-links a{text-decoration:none;opacity:.86;transition:opacity var(--dur-fast)}
+.nav-links a:hover{opacity:1}
+.nav-links .btn{padding:12px 22px;font-size:var(--t-sm);opacity:1}
+@media (max-width:820px){.nav-links a:not(.btn){display:none}}
 
 /* hero */
-#hero{position:relative;height:480vh;padding:0}
-.hero-sticky{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
-.hero-video,.hero-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,var(--c-shade) 0%,var(--c-shade-2) 38%,var(--c-shade-2) 62%,var(--c-shade) 100%)}
-.hero-copy{position:absolute;left:0;right:0;top:9vh;text-shadow:0 2px 24px rgba(20,18,16,.55);text-align:center;padding:0 var(--s3);will-change:transform,opacity}
-.hero-copy h1{font-family:var(--f-display);font-weight:400;font-size:var(--fs-hero);line-height:1.02;letter-spacing:-.02em}
-.hero-copy h1 span{display:block;white-space:nowrap}
-.hero-copy h1 em{font-style:italic;color:var(--c-amber-2)}
-.hero-copy p{margin:var(--s2) auto 0;max-width:520px;font-size:var(--fs-md);color:var(--c-cream-2)}
-.hero-end{position:absolute;left:0;right:0;bottom:16vh;text-align:center;padding:0 var(--s3);opacity:0;transform:translateY(24px)}
-.hero-end h2{font-size:clamp(22px,4.6vw,64px);white-space:nowrap;text-shadow:0 2px 24px rgba(20,18,16,.55)}
-.hero-end .ctas{margin-top:var(--s3);display:flex;gap:var(--s2);justify-content:center;flex-wrap:wrap}
-.hud{position:absolute;left:var(--s3);right:var(--s3);bottom:var(--s3);display:flex;align-items:flex-end;justify-content:space-between;gap:var(--s2);pointer-events:none}
-.hud-tag{white-space:nowrap;display:flex;align-items:center;gap:var(--s1);font-size:var(--fs-xs);letter-spacing:.18em;font-weight:600;text-transform:uppercase;padding:var(--s1) var(--s2);border-radius:var(--r-pill);background:rgba(20,18,16,.6);border:1px solid var(--c-line)}
-.hud-tag b{color:var(--c-amber)}
-.hud-clock{display:grid;justify-items:end;gap:var(--s1)}
-.hud-clock .num{font-family:var(--f-display);font-size:var(--fs-2xl);line-height:1;font-variant-numeric:tabular-nums}
-.hud-clock .num small{font-size:var(--fs-lg);color:var(--c-muted);margin-left:4px}
-.hud-clock .lbl{font-size:var(--fs-xs);letter-spacing:.14em;text-transform:uppercase;color:var(--c-muted)}
-.hud-bar{position:absolute;left:0;bottom:0;height:3px;width:100%;background:rgba(244,238,228,.08)}
-.hud-bar i{display:block;height:100%;width:0;background:var(--c-amber)}
-.scroll-hint{position:absolute;left:50%;bottom:var(--s10);transform:translateX(-50%);font-size:var(--fs-xs);letter-spacing:.18em;text-transform:uppercase;color:var(--c-cream-2);display:grid;justify-items:center;gap:var(--s1)}
-.scroll-hint i{width:1px;height:32px;background:linear-gradient(var(--c-cream),transparent);animation:hint 1.6s var(--ease) infinite}
-@keyframes hint{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
-@media (max-width:640px){.hero-end h2{font-size:6vw}.hud-tag{letter-spacing:.08em;padding:var(--s1) 12px}.hero-copy{top:12vh}.hero-copy p{font-size:var(--fs-md)}.hud-clock .num{font-size:var(--fs-xl)}.scroll-hint{bottom:var(--s12)}}
+#hero{position:relative;height:520vh;background:var(--black)}
+.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
+.frame{position:absolute;inset:0;will-change:clip-path;clip-path:inset(14% 37% 14% 37% round 34px)}
+.frame video,.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.frame::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,5,5,.35),rgba(5,5,5,0) 30%,rgba(5,5,5,0) 60%,rgba(5,5,5,.55))}
+.frame .shade{position:absolute;inset:0;z-index:1;opacity:0;background:linear-gradient(90deg,rgba(5,5,5,.86) 0%,rgba(5,5,5,.6) 32%,rgba(5,5,5,0) 62%);will-change:opacity}
+.bar{position:absolute;left:0;right:0;height:0;background:var(--black);z-index:3}
+.bar.top{top:0}.bar.bot{bottom:0}
+.split{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;align-items:center;pointer-events:none;z-index:4}
+.split h1{font-family:var(--f-display);font-weight:400;font-size:var(--t-hero);line-height:1;letter-spacing:-.02em;white-space:nowrap;will-change:transform,opacity}
+.split .l{justify-self:end;padding-right:calc(13vw + var(--s4));text-align:right}
+.split .r{justify-self:start;padding-left:calc(13vw + var(--s4))}
+.split h1 span{display:block}
+.hero-sub{position:absolute;left:0;right:0;bottom:9vh;text-align:center;z-index:4;font-size:var(--t-md);color:var(--ivory-dim);will-change:opacity}
+.hero-end{position:absolute;left:var(--s6);bottom:calc(10vh + var(--s4));z-index:4;max-width:620px;opacity:0;will-change:opacity,transform}
+.hero-end h2{font-family:var(--f-display);font-weight:400;font-size:clamp(30px,3.6vw,58px);line-height:1.04;letter-spacing:-.015em}
+.hero-end p{margin-top:var(--s2);color:var(--ivory);max-width:28em}
+.hero-end .btn{margin-top:var(--s4)}
+.tc{position:absolute;right:var(--s6);bottom:calc(10vh + var(--s4));z-index:4;text-align:right;font-family:var(--f-display);font-variant-numeric:tabular-nums lining-nums}
+.tc .t{font-size:clamp(24px,2.4vw,36px);letter-spacing:.02em}
+.tc .k{font-family:var(--f-text);font-size:var(--t-sm);color:var(--ivory-dim)}
+.cue{position:absolute;left:50%;top:calc(86% + 6px);transform:translateX(-50%);width:1px;height:48px;z-index:4;overflow:hidden}
+.cue i{display:block;width:100%;height:100%;background:var(--ivory);animation:cue 2.2s var(--ease-io) infinite}
+@keyframes cue{0%{transform:translateY(-100%)}55%{transform:translateY(0)}100%{transform:translateY(100%)}}
+@media (max-width:760px){
+  .frame{clip-path:inset(24% 16% 18% 16% round 26px)}
+  .split{grid-template-columns:1fr;align-content:space-between;padding:14vh 0 8vh}
+  .split .l,.split .r{justify-self:center;padding:0;text-align:center}
+  .split h1{font-size:clamp(34px,9.6vw,56px)}
+  .hero-sub{display:none}
+  .hero-end{left:var(--s3);right:var(--s3);bottom:calc(9vh + var(--s10))}
+  .tc{right:var(--s3);bottom:calc(9vh + var(--s2))}
+  .cue{display:none}
+  .frame .shade{background:linear-gradient(0deg,rgba(5,5,5,.92) 0%,rgba(5,5,5,.6) 42%,rgba(5,5,5,0) 72%)}
+}
 
-/* proof strip */
-.strip{border-top:1px solid var(--c-line);border-bottom:1px solid var(--c-line);padding:var(--s5) 0}
-.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s3)}
-.stat .n{font-family:var(--f-display);font-size:var(--fs-2xl);line-height:1}
-.stat .n em{font-style:normal;color:var(--c-amber)}
-.stat .t{font-size:var(--fs-sm);color:var(--c-muted);margin-top:var(--s1)}
-@media (max-width:760px){.strip .wrap{grid-template-columns:repeat(2,1fr);gap:var(--s4)}}
+/* marquee: continuous */
+.marquee{background:var(--green-800);border-top:1px solid var(--green-line);border-bottom:1px solid var(--green-line);overflow:hidden;padding:var(--s4) 0}
+.marquee .track{display:flex;gap:var(--s8);width:max-content;animation:mq 46s linear infinite}
+.marquee span{font-family:var(--f-display);font-style:italic;font-size:clamp(30px,3.6vw,52px);white-space:nowrap;color:var(--ivory)}
+.marquee span:nth-child(even){color:transparent;-webkit-text-stroke:1px var(--brass-light)}
+@keyframes mq{to{transform:translateX(-50%)}}
 
-/* gallery */
-.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s3)}
-.gallery.one{grid-template-columns:1fr}
-.cmp.wide{aspect-ratio:16/9}
-@media (max-width:760px){.gallery{grid-template-columns:1fr}}
-.cmp{position:relative;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/3;background:var(--c-ink-2);user-select:none;-webkit-user-select:none;touch-action:pan-y}
-.cmp img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.cmp .after{clip-path:inset(0 0 0 50%)}
-.cmp .handle{position:absolute;top:0;bottom:0;left:50%;width:2px;background:var(--c-cream);transform:translateX(-1px);pointer-events:none}
-.cmp .handle::after{content:'\27F7';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;background:var(--c-cream);color:var(--c-ink);display:grid;place-items:center;font-size:var(--fs-lg)}
-.cmp input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
-.cmp .tag{position:absolute;top:var(--s2);font-size:var(--fs-xs);letter-spacing:.16em;text-transform:uppercase;font-weight:600;padding:4px var(--s1);border-radius:var(--r-sm);background:rgba(20,18,16,.7)}
-.cmp .tag.b{left:var(--s2)} .cmp .tag.a{right:var(--s2);color:var(--c-amber)}
-.cmp-cap{display:flex;justify-content:space-between;margin-top:var(--s2);font-size:var(--fs-sm);color:var(--c-muted)}
-.cmp-cap b{color:var(--c-cream);font-weight:500}
+/* manifesto */
+.manifesto{background:var(--stone);color:var(--ink);padding:var(--s20) 0}
+.manifesto p{font-family:var(--f-display);font-size:clamp(30px,3.7vw,56px);line-height:1.2;letter-spacing:-.01em;max-width:21em}
+.manifesto .w{opacity:.16;transition:opacity 500ms var(--ease-out)}
+.manifesto .w.on{opacity:1}
+.manifesto .sig{margin-top:var(--s8);display:flex;gap:var(--s4);align-items:center;font-size:var(--t-md);color:var(--ink-dim)}
+.manifesto .sig b{font-weight:500;color:var(--ink)}
 
-/* steps */
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3);counter-reset:s}
-@media (max-width:860px){.steps{grid-template-columns:1fr}}
-.step{background:var(--c-ink-2);border:1px solid var(--c-line);border-radius:var(--r-lg);padding:var(--s5)}
-.step .k{font-family:var(--f-display);font-size:var(--fs-3xl);color:var(--c-amber);line-height:1;margin-bottom:var(--s3)}
-.step p{color:var(--c-cream-2);margin-top:var(--s1)}
-.step .when{margin-top:var(--s3);font-size:var(--fs-sm);color:var(--c-muted);border-top:1px solid var(--c-line);padding-top:var(--s2)}
+/* work: scroll wipes */
+.work-intro{padding:var(--s20) 0 var(--s10)}
+.work-intro .lede{margin-top:var(--s3);color:var(--ivory-dim)}
+.wipe{position:relative;height:210vh}
+.wipe .pin{position:sticky;top:0;height:100vh;height:100svh;display:grid;grid-template-columns:minmax(260px,.8fr) 1.6fr;gap:var(--s8);align-items:center;max-width:var(--maxw);margin:0 auto;padding:var(--s10) var(--s4) var(--s4)}
+.wipe .meta h3{font-family:var(--f-display);font-weight:400;font-size:clamp(32px,3.4vw,52px);line-height:1.05}
+.wipe .meta p{margin-top:var(--s2);color:var(--ivory-dim);max-width:22em}
+.wipe .meta .state{margin-top:var(--s4);font-family:var(--f-display);font-style:italic;font-size:var(--t-xl);color:var(--brass-light);min-height:1.4em}
+.shot{position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:4px;background:var(--green-800)}
+.shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.shot .after{clip-path:inset(0 0 0 100%);transform:scale(1.08);will-change:clip-path,transform}
+.shot .edge{position:absolute;top:0;bottom:0;width:1px;background:var(--brass-light);left:100%;box-shadow:0 0 24px 2px rgba(214,182,132,.6)}
+@media (max-width:860px){.wipe .pin{grid-template-columns:1fr;gap:var(--s4);align-content:center;padding:var(--s10) var(--s3) var(--s3)}}
+
+/* reel */
+.reel{padding:var(--s20) 0;background:var(--green-800)}
+.reel-head{display:grid;grid-template-columns:1fr 1fr;gap:var(--s6);align-items:end;margin-bottom:var(--s12)}
+.reel-head p{color:var(--ivory-dim)}
+@media (max-width:860px){.reel-head{grid-template-columns:1fr}}
+.reel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s4);align-items:start}
+.clip{position:relative;aspect-ratio:9/16;overflow:hidden;border-radius:4px;background:var(--green-900);will-change:transform}
+.clip video,.clip img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.clip-cap{margin-top:var(--s2);display:flex;justify-content:space-between;gap:var(--s2);font-size:var(--t-sm);color:var(--ivory-dim)}
+.clip-cap b{color:var(--ivory);font-weight:500}
+.reel-grid > div:nth-child(2){margin-top:var(--s12)}
+.reel-grid > div:nth-child(3){margin-top:var(--s6)}
+@media (max-width:760px){.reel-grid{grid-template-columns:1fr 1fr}.reel-grid > div:nth-child(3){display:none}.reel-grid > div:nth-child(2){margin-top:var(--s8)}}
+
+/* process */
+.process{background:var(--stone);color:var(--ink);padding:var(--s20) 0}
+.process .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:var(--s12)}
+.process .side{position:sticky;top:120px;align-self:start}
+.process .side p{margin-top:var(--s3);color:var(--ink-dim);max-width:24em}
+.steps{list-style:none}
+.steps li{display:grid;grid-template-columns:96px 1fr;gap:var(--s4);padding:var(--s6) 0;position:relative}
+.steps li::before{content:'';position:absolute;left:0;right:0;top:0;height:1px;background:var(--ink);transform:scaleX(var(--draw,0));transform-origin:left;opacity:.35}
+.steps .n{font-family:var(--f-display);font-size:var(--t-3xl);line-height:.9;color:var(--green-700)}
+.steps h3{font-family:var(--f-display);font-weight:400;font-size:var(--t-xl);line-height:1.2}
+.steps p{margin-top:var(--s1);color:var(--ink-dim)}
+.steps .when{margin-top:var(--s2);font-size:var(--t-sm);color:var(--green-700);font-weight:500}
+@media (max-width:860px){.process .grid{grid-template-columns:1fr;gap:var(--s6)}.process .side{position:static}.steps li{grid-template-columns:64px 1fr}}
 
 /* pricing */
-.plans{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3)}
-@media (max-width:860px){.plans{grid-template-columns:1fr}}
-.plan{border:1px solid var(--c-line);border-radius:var(--r-lg);padding:var(--s6);display:grid;gap:var(--s3);align-content:start;background:var(--c-ink-2)}
-.plan.feat{border-color:var(--c-amber);background:linear-gradient(180deg,rgba(232,163,61,.10),var(--c-ink-2) 40%)}
-.plan .price{font-family:var(--f-display);font-size:var(--fs-3xl);line-height:1}
-.plan .price small{font-family:var(--f-body);font-size:var(--fs-sm);color:var(--c-muted);margin-left:var(--s1)}
-.plan ul{list-style:none;display:grid;gap:var(--s1)}
-.plan li{padding-left:var(--s3);position:relative;color:var(--c-cream-2)}
-.plan li::before{content:'';position:absolute;left:0;top:10px;width:8px;height:8px;border-radius:50%;background:var(--c-amber)}
-.badge{justify-self:start;font-size:var(--fs-xs);letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--c-ink);background:var(--c-amber);padding:4px var(--s1);border-radius:var(--r-sm)}
-.terms{margin-top:var(--s4);font-size:var(--fs-sm);color:var(--c-muted);text-align:center}
+.pricing{padding:var(--s20) 0}
+.pricing .lede{margin-top:var(--s3);color:var(--ivory-dim)}
+.plans{margin-top:var(--s12);display:grid;grid-template-columns:1fr 1px 1fr;gap:var(--s10)}
+.plans .rule{background:var(--brass);opacity:.5}
+.plan h3{font-family:var(--f-display);font-weight:400;font-size:var(--t-2xl)}
+.plan .price{margin-top:var(--s2);font-family:var(--f-display);font-size:clamp(56px,6vw,88px);line-height:1;font-variant-numeric:lining-nums}
+.plan .price small{font-family:var(--f-text);font-size:var(--t-sm);color:var(--ivory-dim);margin-left:var(--s1);letter-spacing:0}
+.plan .for{margin-top:var(--s2);color:var(--brass-light)}
+.plan ul{list-style:none;margin-top:var(--s4);border-top:1px solid var(--green-line)}
+.plan li{padding:14px 0;border-bottom:1px solid var(--green-line)}
+.plan .btn{margin-top:var(--s5)}
+.terms{margin-top:var(--s10);color:var(--ivory-dim);font-size:var(--t-sm);max-width:44em}
+@media (max-width:860px){.plans{grid-template-columns:1fr;gap:var(--s8)}.plans .rule{height:1px}}
 
-/* versus */
-.vs{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--c-line);border-radius:var(--r-lg);overflow:hidden}
-@media (max-width:760px){.vs{grid-template-columns:1fr}}
-.vs > div{padding:var(--s5)}
-.vs .us{background:var(--c-pine)}
-.vs h3{margin-bottom:var(--s2)}
-.vs ul{list-style:none;display:grid;gap:var(--s2)}
-.vs li{display:flex;gap:var(--s2);color:var(--c-cream-2)}
-.vs li i{font-style:normal;flex:0 0 auto;width:24px;color:var(--c-muted)}
-.vs .us li i{color:var(--c-amber-2)}
-
-/* founding */
-.founding{display:grid;grid-template-columns:1.1fr .9fr;gap:var(--s6);align-items:center}
-@media (max-width:860px){.founding{grid-template-columns:1fr}}
-.founding figure{border-radius:var(--r-lg);overflow:hidden;aspect-ratio:16/10;will-change:transform}
-.founding figure img{width:100%;height:100%;object-fit:cover}
-.slots{display:flex;gap:var(--s1);margin-top:var(--s3)}
-.slots i{width:40px;height:8px;border-radius:4px;background:var(--c-amber)}
-.slots i.off{background:var(--c-line)}
+/* founders */
+.founders{position:relative;min-height:110vh;display:grid;align-items:end;overflow:hidden}
+.founders .bg{position:absolute;inset:0}
+.founders .bg img{width:100%;height:100%;object-fit:cover;animation:kb 26s ease-in-out infinite alternate}
+@keyframes kb{from{transform:scale(1.02) translate(0,0)}to{transform:scale(1.12) translate(-1.5%,-1%)}}
+.founders::before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(13,33,28,.15) 0%,rgba(13,33,28,.4) 45%,rgba(13,33,28,.94) 100%)}
+.founders .wrap{position:relative;z-index:2;padding-bottom:var(--s16);width:100%}
+.founders .lede{margin-top:var(--s3)}
+.seats{display:flex;gap:10px;margin-top:var(--s5)}
+.seats i{width:44px;height:2px;background:var(--brass-light);animation:breathe 3.2s ease-in-out infinite}
+.seats i:nth-child(2){animation-delay:.3s}.seats i:nth-child(3){animation-delay:.6s}.seats i:nth-child(4){animation-delay:.9s}.seats i:nth-child(5){animation-delay:1.2s}
+@keyframes breathe{0%,100%{opacity:.35}50%{opacity:1}}
+.seats-note{margin-top:var(--s2);font-size:var(--t-sm);color:var(--ivory-dim)}
 
 /* about */
-.about{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
-@media (max-width:860px){.about{grid-template-columns:1fr}}
-.about .card{border-top:2px solid var(--c-amber);padding-top:var(--s3)}
-.about p{color:var(--c-cream-2);margin-top:var(--s1)}
+.about{background:var(--stone);color:var(--ink);padding:var(--s20) 0}
+.about .grid{display:grid;grid-template-columns:1.2fr 1fr;gap:var(--s12);align-items:start}
+.about .lede{color:var(--ink)}
+.about dl{display:grid;gap:var(--s5)}
+.about dt{font-family:var(--f-display);font-size:var(--t-xl)}
+.about dd{margin-top:var(--s1);color:var(--ink-dim)}
+@media (max-width:860px){.about .grid{grid-template-columns:1fr;gap:var(--s8)}}
 
 /* faq */
-.faq{display:grid;gap:var(--s1);max-width:860px}
-details{border-bottom:1px solid var(--c-line);padding:var(--s3) 0}
-summary{cursor:pointer;list-style:none;font-family:var(--f-display);font-size:var(--fs-lg);display:flex;justify-content:space-between;gap:var(--s2)}
-summary::-webkit-details-marker{display:none}
-summary::after{content:'+';color:var(--c-amber);transition:transform var(--dur-fast) var(--ease)}
-details[open] summary::after{transform:rotate(45deg)}
-details p{margin-top:var(--s2);color:var(--c-cream-2);max-width:720px}
+.faq{padding:var(--s20) 0}
+.faq .list{margin-top:var(--s10);border-top:1px solid var(--green-line);max-width:880px}
+.q{border-bottom:1px solid var(--green-line)}
+.q button{all:unset;box-sizing:border-box;width:100%;display:flex;justify-content:space-between;align-items:center;gap:var(--s3);padding:var(--s4) 0;cursor:pointer;font-family:var(--f-display);font-size:var(--t-xl);line-height:1.25}
+.q button:focus-visible{outline:2px solid var(--brass-light);outline-offset:4px}
+.q .pm{flex:0 0 auto;width:18px;height:18px;position:relative}
+.q .pm::before,.q .pm::after{content:'';position:absolute;left:0;right:0;top:50%;height:1px;background:var(--brass-light);transition:transform 500ms var(--ease-out)}
+.q .pm::after{transform:rotate(90deg)}
+.q.open .pm::after{transform:rotate(0)}
+.q .a{display:grid;grid-template-rows:0fr;transition:grid-template-rows 600ms var(--ease-out)}
+.q.open .a{grid-template-rows:1fr}
+.q .a > div{overflow:hidden}
+.q .a p{padding-bottom:var(--s4);color:var(--ivory-dim);max-width:40em}
 
-/* cta */
-.cta{position:relative;overflow:hidden;border-radius:var(--r-lg);margin:0 var(--s3);min-height:520px;display:grid;place-items:center;text-align:center}
-.cta img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.cta::before{content:'';position:absolute;inset:0;background:rgba(20,18,16,.62);z-index:1}
-.cta .in{position:relative;z-index:2;padding:var(--s10) var(--s3);display:grid;gap:var(--s3);justify-items:center}
-.cta .mail{font-size:var(--fs-sm);color:var(--c-cream-2)}
-.copy-btn{background:none;border:1px solid var(--c-line);color:var(--c-cream);border-radius:var(--r-pill);padding:4px var(--s2);font:inherit;font-size:var(--fs-xs);cursor:pointer;margin-left:var(--s1)}
+/* final */
+.final{position:relative;padding:var(--s20) 0 var(--s16);text-align:center;overflow:hidden}
+.final h2{font-family:var(--f-display);font-weight:400;font-size:clamp(52px,9vw,148px);line-height:.98;letter-spacing:-.025em}
+.final p{margin:var(--s4) auto 0;color:var(--ivory-dim);max-width:30em}
+.final .btn{margin-top:var(--s6)}
+.final .addr{margin-top:var(--s3);font-size:var(--t-sm);color:var(--ivory-dim)}
+.copy{all:unset;cursor:pointer;border-bottom:1px solid var(--brass);margin-left:var(--s1);color:var(--brass-light)}
+.seal{position:absolute;right:6vw;top:var(--s10);width:132px;height:132px;animation:spin 28s linear infinite;opacity:.8}
+.seal text{font-family:var(--f-text);font-size:10.5px;letter-spacing:.2em;fill:var(--brass-light)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (max-width:760px){.seal{display:none}}
 
-footer{padding:var(--s8) 0 var(--s6);font-size:var(--fs-sm);color:var(--c-muted)}
-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--s3)}
+footer{border-top:1px solid var(--green-line);padding:var(--s6) 0;font-size:var(--t-sm);color:var(--ivory-dim)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--s4)}
+footer .wordmark{font-size:24px;color:var(--ivory)}
 
-/* motion kit */
-.rv{opacity:0;transform:translateY(32px);transition:opacity var(--dur) var(--ease),transform var(--dur) var(--ease);transition-delay:calc(var(--i,0) * 90ms)}
-.rv.in{opacity:1;transform:none}
+/* reveal (used once per section heading, scroll-linked) */
+.rise{opacity:0;transform:translateY(40px);transition:opacity 1100ms var(--ease-out),transform 1100ms var(--ease-out)}
+.rise.in{opacity:1;transform:none}
+
 @media (prefers-reduced-motion:reduce){
-  .rv{opacity:1;transform:none;transition:none}
-  .scroll-hint i,.loader-bar i{animation:none}
+  .grain,.marquee .track,.founders .bg img,.seats i,.seal,.cue i,#loader .line i{animation:none}
+  .rise{opacity:1;transform:none;transition:none}
+  .manifesto .w{opacity:1}
 }
 </style>
 </head>
 <body>
-<div id="loader" aria-hidden="true"><div class="loader-inner"><div class="loader-mark">Kesis<span style="color:var(--c-amber)">.</span></div><div class="loader-bar"><i></i></div></div></div>
+<div class="grain" aria-hidden="true"></div>
+<div id="loader" aria-hidden="true"><div><div class="mark">Kesis</div><div class="line"><i></i></div></div></div>
 
-<nav class="top" id="nav"><div class="wrap">
-  <a class="brand" href="#top">Kesis<span>.</span> Studio</a>
+<nav class="nav" id="nav"><div class="wrap">
+  <a class="wordmark" href="#top">Kesis</a>
   <div class="nav-links">
-    <a href="#work">Work</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a>
-    <a class="btn btn-primary" href="#start">Send a photo</a>
+    <a href="#work">Work</a><a href="#process">Process</a><a href="#pricing">Pricing</a><a href="#faq">Questions</a>
+    <a class="btn btn-brass mag" href="#send">Send a photo</a>
   </div>
 </div></nav>
 
-<header id="hero"><div class="hero-sticky" id="top">
-  <img class="hero-poster" src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JBKi6VaeH9JlCBE9aqtrnAOk5G/335104d7-f723-4549-81eb-480018f2333c.jpg" alt="">
-  <video class="hero-video" id="heroVideo" muted playsinline preload="auto" poster="https://d2ol7oe51mr4n9.cloudfront.net/user_3JBKi6VaeH9JlCBE9aqtrnAOk5G/335104d7-f723-4549-81eb-480018f2333c.jpg" src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JBKi6VaeH9JlCBE9aqtrnAOk5G/cf316e11-169a-4cd2-9fd0-1369a8088365.mp4"></video>
-  <div class="hero-shade"></div>
-  <div class="hero-copy" id="heroCopy">
-    <h1><span>From phone photo</span><span>to <em>Christmas campaign.</em></span></h1>
-    <p>Send us a snap of your product. Get scroll-stopping ads and short videos back in 48&nbsp;hours.</p>
+<header id="hero"><div class="stage" id="top">
+  <div class="frame" id="frame">
+    <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JBKi6VaeH9JlCBE9aqtrnAOk5G/335104d7-f723-4549-81eb-480018f2333c.jpg" alt="">
+    <video id="heroVideo" muted playsinline preload="auto" poster="https://d2ol7oe51mr4n9.cloudfront.net/user_3JBKi6VaeH9JlCBE9aqtrnAOk5G/335104d7-f723-4549-81eb-480018f2333c.jpg" src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JBKi6VaeH9JlCBE9aqtrnAOk5G/cf316e11-169a-4cd2-9fd0-1369a8088365.mp4"></video>
+    <div class="shade" id="shade"></div>
   </div>
-  <div class="hero-end" id="heroEnd">
-    <h2>Same product. 48 hours later.</h2>
-    <div class="ctas"><a class="btn btn-primary" href="#start">Send us one photo</a><a class="btn btn-ghost" href="#work">See more work</a></div>
+  <div class="bar top" id="barT"></div><div class="bar bot" id="barB"></div>
+  <div class="split" id="split">
+    <h1 class="l" id="hl" aria-label="From a phone photo to a film."><span>From a</span><span>phone photo</span></h1>
+    <div class="r" aria-hidden="true" id="hr"><div class="display" style="font-size:var(--t-hero);line-height:1;letter-spacing:-.02em"><span style="display:block">to a</span><span style="display:block">film.</span></div></div>
   </div>
-  <div class="scroll-hint" id="hint">Scroll<i></i></div>
-  <div class="hud">
-    <div class="hud-tag" id="tag">Before</div>
-    <div class="hud-clock"><div class="num"><span id="hours">0</span><small>h</small></div><div class="lbl">Turnaround</div></div>
+  <p class="hero-sub" id="sub">Scroll to watch one jar become a Christmas advert.</p>
+  <div class="cue" id="cue"><i></i></div>
+  <div class="hero-end" id="end">
+    <h2>Same jar. Same label.<br>Forty-eight hours later.</h2>
+    <p>We turn the photo you already have into adverts and short films your customers stop for.</p>
+    <a class="btn btn-brass mag" href="#send">Send us one photo</a>
   </div>
-  <div class="hud-bar"><i id="bar"></i></div>
+  <div class="tc" aria-hidden="true"><div class="t" id="tc">00:00:00</div><div class="k">hours into the edit</div></div>
 </div></header>
 
-<div class="strip"><div class="wrap">
-  <div class="stat rv"><div class="n"><span class="count" data-to="48">0</span><em>h</em></div><div class="t">First preview, from one phone photo</div></div>
-  <div class="stat rv" style="--i:1"><div class="n">&#xA3;0</div><div class="t">Watermarked sample before you pay</div></div>
-  <div class="stat rv" style="--i:2"><div class="n"><span class="count" data-to="3">0</span></div><div class="t">Formats: feed, story and banner</div></div>
-  <div class="stat rv" style="--i:3"><div class="n"><em>0</em></div><div class="t">Fake people. Your real product, always</div></div>
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Candles</span><span>Coffee</span><span>Small-batch gin</span><span>Chocolate</span><span>Skincare</span><span>Preserves</span><span>Bakeries</span><span>Tea</span>
+  <span>Candles</span><span>Coffee</span><span>Small-batch gin</span><span>Chocolate</span><span>Skincare</span><span>Preserves</span><span>Bakeries</span><span>Tea</span>
 </div></div>
 
-<section id="work"><div class="wrap">
-  <div class="section-head rv"><div class="eyebrow">The work</div><h2>The before. The after.</h2><p class="lead">Drag the line. The &#x201C;after&#x201D; started as the ordinary phone photo on the left: same jar, same label, nothing redrawn.</p></div>
-  <div class="gallery one">
-    <div class="rv"><div class="cmp wide"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JBKi6VaeH9JlCBE9aqtrnAOk5G/335104d7-f723-4549-81eb-480018f2333c.jpg" alt="Amber jar, original phone photo on a kitchen counter" loading="lazy"><img class="after" src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JBKi6VaeH9JlCBE9aqtrnAOk5G/b171bc6b-0ed3-4902-929c-ec38dc15452b.jpg" alt="The same amber jar styled as a Christmas advert" loading="lazy"><div class="handle"></div><span class="tag b">Before</span><span class="tag a">After</span><input type="range" min="0" max="100" value="50" aria-label="Compare before and after"></div><div class="cmp-cap"><b>Small-batch jar &#xB7; same product, same label</b><span>Gift-guide hero &#xB7; 16:9</span></div></div>
-  </div>
+<section class="manifesto"><div class="wrap">
+  <p id="mf">Most independent brands make something beautiful and photograph it on the kitchen counter. We take that photo and give your product the light, the set and the film it deserves, without a photoshoot, in two days.</p>
+  <div class="sig"><b>Kesis Studio</b><span>Adverts and short films for small brands in the UK and US</span></div>
 </div></section>
 
-<section id="how" style="background:var(--c-ink-2)"><div class="wrap">
-  <div class="section-head rv"><div class="eyebrow">How it works</div><h2>Three steps. No photoshoot.</h2></div>
-  <div class="steps">
-    <div class="step rv"><div class="k">01</div><h3>Send one photo</h3><p>Any clear phone photo of your product works. Tell us what you sell and when you need it.</p><div class="when">Takes you 2 minutes</div></div>
-    <div class="step rv" style="--i:1"><div class="k">02</div><h3>We direct and produce</h3><p>We plan the look, style the scene around your real packaging and send a watermarked preview.</p><div class="when">Preview within 48 hours</div></div>
-    <div class="step rv" style="--i:2"><div class="k">03</div><h3>Approve and post</h3><p>Ask for changes, approve, and get full-resolution files sized for Instagram, Facebook and your website.</p><div class="when">Ready to post the same day</div></div>
-  </div>
+<section id="work">
+  <div class="wrap work-intro"><h2 class="display rise">Before, and after.</h2><p class="lede rise">Keep scrolling. Each finished image starts from an ordinary phone photo, and your packaging stays exactly as it is.</p></div>
+  <div class="wipe"><div class="pin"><div class="meta"><h3>Small-batch preserve</h3><p>A kitchen-counter photo turned into a Christmas gift-guide hero. Same jar, same label, nothing redrawn.</p><div class="state">Phone photo</div></div><div class="shot"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JBKi6VaeH9JlCBE9aqtrnAOk5G/335104d7-f723-4549-81eb-480018f2333c.jpg" alt="Amber jar photographed on a cluttered kitchen counter" loading="lazy"><img class="after" src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JBKi6VaeH9JlCBE9aqtrnAOk5G/b171bc6b-0ed3-4902-929c-ec38dc15452b.jpg" alt="The same amber jar on snowy oak with pine and fairy lights" loading="lazy"><i class="edge"></i></div></div></div>
+</section>
+
+<section class="process" id="process"><div class="wrap grid">
+  <div class="side"><h2 class="display">How a campaign gets made.</h2><p>No studio visit, no samples in the post. You send one photo and we do the rest by email.</p></div>
+  <ol class="steps">
+    <li><span class="n">1</span><div><h3>You send one photo</h3><p>Any clear phone photo of your product, plus a line about your brand and your deadline.</p><div class="when">Two minutes of your time</div></div></li>
+    <li><span class="n">2</span><div><h3>We direct the shoot, digitally</h3><p>We plan the light, the set and the mood around your real packaging, then send you a watermarked preview.</p><div class="when">Preview within 48 hours</div></div></li>
+    <li><span class="n">3</span><div><h3>You approve and post</h3><p>Ask for changes, approve, and receive full-resolution images and films sized for Instagram, Facebook and your website.</p><div class="when">Ready the same day</div></div></li>
+  </ol>
 </div></section>
 
-<section id="pricing"><div class="wrap">
-  <div class="section-head rv"><div class="eyebrow">Christmas packages</div><h2>Simple, fixed prices.</h2><p class="lead">No retainer, no contract. You see a free watermarked sample with your own product before you spend a penny.</p></div>
+<section class="pricing" id="pricing"><div class="wrap">
+  <h2 class="display rise">Two packages. Fixed prices.</h2>
+  <p class="lede rise">No retainer and no contract. You see a free watermarked sample of your own product before you spend anything.</p>
   <div class="plans">
-    <div class="plan rv"><h3>Christmas Starter</h3><div class="price">&#xA3;249<small>one-off</small></div>
-      <ul><li>6 ad images for one product</li><li>Feed, story and banner sizes</li><li>1 short video (5&#x2013;10 seconds)</li><li>1 round of changes</li><li>Preview in 48 hours</li></ul>
-      <a class="btn btn-ghost" href="#start">Start with a free sample</a></div>
-    <div class="plan feat rv" style="--i:1"><span class="badge">Most chosen</span><h3>Christmas Pro</h3><div class="price">&#xA3;479<small>one-off</small></div>
-      <ul><li>12 ad images, up to 3 products</li><li>Feed, story and banner sizes</li><li>3 short videos, including a 15-second ad</li><li>2 rounds of changes</li><li>January sale versions included</li><li>Priority 48-hour preview</li></ul>
-      <a class="btn btn-primary" href="#start">Start with a free sample</a></div>
+    <div class="plan"><h3>Christmas Starter</h3><div class="price">&#xA3;249<small>one-off</small></div><p class="for">For one hero product</p>
+      <ul><li>6 advert images in feed, story and banner sizes</li><li>1 short film, 5 to 10 seconds</li><li>1 round of changes</li><li>Preview in 48 hours</li></ul>
+      <a class="btn btn-line mag" href="#send">Start with a free sample</a></div>
+    <div class="rule" aria-hidden="true"></div>
+    <div class="plan"><h3>Christmas Pro</h3><div class="price">&#xA3;479<small>one-off</small></div><p class="for">For up to three products</p>
+      <ul><li>12 advert images in feed, story and banner sizes</li><li>3 short films, including a 15-second advert</li><li>2 rounds of changes</li><li>January sale versions included</li></ul>
+      <a class="btn btn-brass mag" href="#send">Start with a free sample</a></div>
   </div>
-  <p class="terms rv">50% to start, 50% on delivery. Pay by UK bank transfer in GBP or by card. Prices in GBP; US clients pay the same in USD equivalent.</p>
+  <p class="terms">Half to start, half on delivery, by UK bank transfer in pounds or by card. US brands pay the same amount in dollars.</p>
 </div></section>
 
-<section style="padding-top:0"><div class="wrap">
-  <div class="section-head rv"><div class="eyebrow">Why not an app?</div><h2>An app gives you a background.<br>We give you a campaign.</h2></div>
-  <div class="vs rv">
-    <div><h3>Doing it yourself</h3><ul><li><i>&#x2014;</i>Hours of trial and error on your evenings</li><li><i>&#x2014;</i>Your label warped or the bottle shape changed</li><li><i>&#x2014;</i>The same templates everyone else uses</li><li><i>&#x2014;</i>Stills only, no video</li></ul></div>
-    <div class="us"><h3>Kesis Studio</h3><ul><li><i>&#x2713;</i>One photo from you, everything else from us</li><li><i>&#x2713;</i>Your packaging kept exactly as it is</li><li><i>&#x2713;</i>A look planned around your brand and the season</li><li><i>&#x2713;</i>Short videos that stop the scroll</li></ul></div>
-  </div>
+<section class="founders"><div class="bg"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JBKi6VaeH9JlCBE9aqtrnAOk5G/b171bc6b-0ed3-4902-929c-ec38dc15452b.jpg" alt="" loading="lazy"></div>
+  <div class="wrap"><h2 class="display">Five places for founding brands.</h2><p class="lede">This Christmas we are taking on five founding brands. Each gets a free extra variation on any package and a guaranteed delivery before 18 December.</p>
+  <div class="seats" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><p class="seats-note">All five places are open.</p>
+  <a class="btn btn-brass mag" style="margin-top:var(--s5)" href="#send">Claim a founding place</a></div>
+</section>
+
+<section class="about"><div class="wrap grid">
+  <div><h2 class="display">A small studio, on purpose.</h2><p class="lede" style="margin-top:var(--s4)">Kesis Studio is run by Andre Alves. You deal with the person making your visuals, by email, from first photo to final file.</p></div>
+  <dl>
+    <div><dt>Your real product</dt><dd>We style what you actually sell. No invented people, no stock actors and no changes to your label.</dd></div>
+    <div><dt>Honest about our tools</dt><dd>We work with AI image and video tools, directed and checked by hand frame by frame. That is how we keep prices fair for small brands.</dd></div>
+    <div><dt>Working while you sleep</dt><dd>We are based in Brazil, a few hours behind London. Send a photo in the evening and wake up to progress.</dd></div>
+  </dl>
 </div></section>
 
-<section style="background:var(--c-ink-2)"><div class="wrap founding">
-  <div class="rv"><div class="eyebrow">Founding clients</div><h2 style="margin-top:var(--s2)">The first five brands get a little extra.</h2><p class="lead" style="margin-top:var(--s3)">We are opening our Christmas calendar to five founding brands: a free extra variation on any package and a guaranteed slot before 18 December.</p><div class="slots" aria-label="5 founding slots open"><i></i><i></i><i></i><i></i><i></i></div><p style="margin-top:var(--s1);font-size:var(--fs-sm);color:var(--c-muted)">5 of 5 slots open</p><a class="btn btn-primary" style="margin-top:var(--s4)" href="#start">Claim a founding slot</a></div>
-  <figure class="rv px" style="--i:1"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JBKi6VaeH9JlCBE9aqtrnAOk5G/b171bc6b-0ed3-4902-929c-ec38dc15452b.jpg" alt="Amber jar styled as a Christmas advert" loading="lazy"></figure>
-</div></section>
-
-<section><div class="wrap">
-  <div class="section-head rv"><div class="eyebrow">Who's behind Kesis</div><h2>A small studio, on purpose.</h2><p class="lead">Kesis Studio is run by Andre Alves and works remotely with independent brands in the UK and the US. You talk to the person making your visuals, by email, start to finish.</p></div>
-  <div class="about">
-    <div class="card rv"><h3>Real products only</h3><p>We style the product you actually sell. No stock actors, no invented people, no changes to your label.</p></div>
-    <div class="card rv" style="--i:1"><h3>Honest about the tools</h3><p>We use AI image and video tools, directed and checked by hand, frame by frame. That is how we keep prices small-brand friendly.</p></div>
-    <div class="card rv" style="--i:2"><h3>Fast, by design</h3><p>Based in Brazil, a few hours behind London: you send a photo in the evening and wake up to progress.</p></div>
-  </div>
-</div></section>
-
-<section id="faq" style="padding-top:0"><div class="wrap">
-  <div class="section-head rv"><div class="eyebrow">Questions</div><h2>Before you ask.</h2></div>
-  <div class="faq rv">
-    <details><summary>Is this made with AI?</summary><p>Yes, and we are upfront about it. We use AI image and video tools, then direct, check and correct every frame by hand. Your product itself always comes from your own photo, so what customers see is what they will receive.</p></details>
-    <details><summary>Will it really look like my product?</summary><p>That is the part we are strictest about. We keep your packaging, label and shape exactly as they are. If anything looks off in the preview, we fix it before you pay the balance.</p></details>
-    <details><summary>What do you need from me?</summary><p>One clear phone photo per product, taken in daylight if you can, plus a line about your brand and any deadline. That is it.</p></details>
-    <details><summary>How fast is it, really?</summary><p>You get a watermarked preview within 48 hours of sending your photo. Final files usually follow within a day of your approval.</p></details>
-    <details><summary>Can I use the images in paid ads?</summary><p>Yes. You get full commercial use of everything we deliver: organic posts, paid social, your website, email and print.</p></details>
-    <details><summary>How do I pay?</summary><p>50% to start and 50% on delivery, by UK bank transfer in GBP or by card. US clients can pay in USD.</p></details>
-    <details><summary>What if I don't like it?</summary><p>You see a free sample with your own product before committing, and every package includes rounds of changes. If the preview is not right for you, you walk away and pay nothing.</p></details>
+<section class="faq" id="faq"><div class="wrap">
+  <h2 class="display rise">Questions brands ask us.</h2>
+  <div class="list">
+    <div class="q"><button aria-expanded="false">Is this made with AI?<span class="pm"></span></button><div class="a"><div><p>Yes, and we say so openly. We use AI image and video tools, then direct, check and correct every frame by hand. Your product always comes from your own photo, so customers see what they will receive.</p></div></div></div>
+    <div class="q"><button aria-expanded="false">Will it really look like my product?<span class="pm"></span></button><div class="a"><div><p>That is the part we are strictest about. Your packaging, label and shape stay exactly as they are. If anything looks off in the preview, we fix it before you pay the balance.</p></div></div></div>
+    <div class="q"><button aria-expanded="false">What do you need from me?<span class="pm"></span></button><div class="a"><div><p>One clear phone photo per product, in daylight if you can, and a line about your brand and deadline.</p></div></div></div>
+    <div class="q"><button aria-expanded="false">How fast is it?<span class="pm"></span></button><div class="a"><div><p>A watermarked preview within 48 hours of your photo. Final files usually follow within a day of your approval.</p></div></div></div>
+    <div class="q"><button aria-expanded="false">Can I use everything in paid adverts?<span class="pm"></span></button><div class="a"><div><p>Yes. You get full commercial use: organic posts, paid social, your website, email and print.</p></div></div></div>
+    <div class="q"><button aria-expanded="false">What if I don't like the preview?<span class="pm"></span></button><div class="a"><div><p>The first sample is free. If it is not right for your brand, you walk away and pay nothing.</p></div></div></div>
   </div>
 </div></section>
 
-<div class="cta rv" id="start">
-  <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JBKi6VaeH9JlCBE9aqtrnAOk5G/b171bc6b-0ed3-4902-929c-ec38dc15452b.jpg" alt="" loading="lazy">
-  <div class="in"><div class="eyebrow">Free sample</div><h2>Send us one photo.<br>We'll show you the after.</h2>
-    <a class="btn btn-primary" href="mailto:andre@kesis.com.br?subject=Free%20sample%20for%20my%20product">Email a photo to Kesis</a>
-    <div class="mail">andre@kesis.com.br <button class="copy-btn" id="copyMail" type="button">Copy</button></div></div>
-</div>
+<section class="final" id="send">
+  <svg class="seal" viewBox="0 0 132 132" aria-hidden="true"><defs><path id="c" d="M66,66 m-52,0 a52,52 0 1,1 104,0 a52,52 0 1,1 -104,0"/></defs><text><textPath href="#c">kesis studio  phone photo to film  in 48 hours  </textPath></text></svg>
+  <div class="wrap"><h2>Send us<br>one photo.</h2><p>Tell us what you sell and when you need it. We will reply with a free watermarked sample of your own product.</p>
+  <a class="btn btn-brass mag" href="mailto:andre@kesis.com.br?subject=Free%20sample%20for%20my%20product">Email andre@kesis.com.br</a>
+  <p class="addr">Or copy the address <button class="copy" id="copy" type="button">andre@kesis.com.br</button></p></div>
+</section>
 
 <footer><div class="wrap">
-  <div><b style="color:var(--c-cream);font-family:var(--f-display)">Kesis<span style="color:var(--c-amber)">.</span> Studio</b><br>Ad visuals for independent brands</div>
-  <div>Rua Cambar&#xE1;, 589, Sala 101 &#x2013; Centro<br>Londrina, PR 86010-530 &#x2013; Brazil</div>
-  <div>andre@kesis.com.br<br>&#xA9; 2026 Kesis Studio</div>
+  <div><span class="wordmark">Kesis</span><br>Adverts and short films for independent brands</div>
+  <div>Rua Cambar&#xE1;, 589, Sala 101, Centro<br>Londrina, PR 86010-530, Brazil</div>
+  <div>andre@kesis.com.br<br>&copy; 2026 Kesis Studio</div>
 </div></footer>
 
+<script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
 <script>
-/* ---- shared helpers (declared before any bind) ---- */
-var clamp = function(v, a, b){ return Math.min(b, Math.max(a, v)); };
-var lerp = function(a, b, t){ return a + (b - a) * t; };
-var ease = function(t){ return t < .5 ? 2*t*t : 1 - Math.pow(-2*t + 2, 2) / 2; };
+/* ---------- shared helpers, declared before every bind ---------- */
+var clamp = function(v,a,b){ return Math.min(b, Math.max(a, v)); };
+var lerp = function(a,b,t){ return a + (b - a) * t; };
+var ease = function(t){ return 1 - Math.pow(1 - t, 3); };
+var easeIO = function(t){ return t < .5 ? 4*t*t*t : 1 - Math.pow(-2*t + 2, 3) / 2; };
 var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-var schedule = function(fn){ if (document.hidden) { fn(); } else { requestAnimationFrame(fn); } };
+var isMobile = window.matchMedia('(max-width:760px)').matches;
+var sectionProgress = function(el){ var r = el.getBoundingClientRect(); var s = r.height - window.innerHeight; return s > 0 ? clamp(-r.top / s, 0, 1) : 0; };
+var tickers = [];
+var onFrame = function(fn){ tickers.push(fn); };
 
-/* ---- loader: release on canplaythrough, fallback 6s ---- */
-var loader = document.getElementById('loader');
-var released = false;
-function releaseLoader(){ if (released) return; released = true; loader.classList.add('done'); }
-setTimeout(releaseLoader, 6000);
-
-/* ---- hero scroll binding ---- */
-var hero = document.getElementById('hero');
-var video = document.getElementById('heroVideo');
-var copy = document.getElementById('heroCopy');
-var endBox = document.getElementById('heroEnd');
-var tag = document.getElementById('tag');
-var hours = document.getElementById('hours');
-var bar = document.getElementById('bar');
-var hint = document.getElementById('hint');
-var duration = 0, lastP = -1, ticking = false;
-
-function readDuration(){ if (video.readyState >= 1 && isFinite(video.duration) && video.duration > 0) { duration = video.duration; } }
-function progress(){
-  var r = hero.getBoundingClientRect();
-  var scrollable = r.height - window.innerHeight;
-  return scrollable > 0 ? clamp(-r.top / scrollable, 0, 1) : 0;
+/* ---------- smooth scroll ---------- */
+var lenis = null;
+if (!reduced && window.Lenis) {
+  try { lenis = new Lenis({ lerp: 0.085, smoothWheel: true }); } catch(e) { lenis = null; }
 }
-function render(){
-  ticking = false;
-  var p = progress();
-  if (duration === 0) readDuration();
-  if (duration > 0 && Math.abs(p - lastP) > 0.0005) {
-    var t = p * (duration - 0.05);
-    if (Math.abs(video.currentTime - t) > 0.001) { try { video.currentTime = t; } catch(e){} }
-  }
-  lastP = p;
-  var a = clamp(p / 0.22, 0, 1);
-  copy.style.opacity = String(1 - a);
-  copy.style.transform = 'translateY(' + (-60 * ease(a)) + 'px)';
-  var b = clamp((p - 0.78) / 0.16, 0, 1);
-  endBox.style.opacity = String(b);
-  endBox.style.transform = 'translateY(' + (24 * (1 - ease(b))) + 'px)';
-  endBox.style.pointerEvents = b > 0.5 ? 'auto' : 'none';
-  hours.textContent = String(Math.round(p * 48));
-  bar.style.width = (p * 100) + '%';
-  tag.innerHTML = p < 0.5 ? 'Before &#xB7; <b>phone photo</b>' : 'After &#xB7; <b>campaign</b>';
-  hint.style.opacity = String(1 - clamp(p / 0.04, 0, 1));
-}
-function onScroll(){ if (!ticking) { ticking = true; schedule(render); } }
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click', function(e){ var id = a.getAttribute('href'); var t = id.length > 1 ? document.querySelector(id) : null; if (!t) return; e.preventDefault(); if (lenis) lenis.scrollTo(t, { duration: 1.6 }); else t.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' }); });
+});
 
+/* ---------- loader ---------- */
+var loader = document.getElementById('loader'), released = false;
+function release(){ if (released) return; released = true; loader.classList.add('done'); }
+setTimeout(release, 6000);
+
+/* ---------- hero ---------- */
+var hero = document.getElementById('hero'), video = document.getElementById('heroVideo'), frame = document.getElementById('frame');
+var hl = document.getElementById('hl'), hr = document.getElementById('hr'), sub = document.getElementById('sub'), cue = document.getElementById('cue');
+var shade = document.getElementById('shade'), endBox = document.getElementById('end'), tc = document.getElementById('tc'), barT = document.getElementById('barT'), barB = document.getElementById('barB');
+var duration = 0, vt = 0;
+function readDuration(){ if (video.readyState >= 1 && isFinite(video.duration) && video.duration > 0) duration = video.duration; }
 if (video.readyState >= 1) readDuration();
-video.addEventListener('loadedmetadata', function(){ readDuration(); render(); });
-video.addEventListener('canplaythrough', releaseLoader);
-if (video.readyState >= 4) releaseLoader();
+video.addEventListener('loadedmetadata', readDuration);
+video.addEventListener('canplaythrough', release);
+if (video.readyState >= 4) release();
 video.addEventListener('loadeddata', function(){ video.pause(); });
-window.addEventListener('scroll', onScroll, { passive: true });
-window.addEventListener('resize', onScroll);
-render();
+var pad2 = function(n){ return (n < 10 ? '0' : '') + n; };
+var F = isMobile ? [24,16,18,16,26] : [14,37,14,37,34];
+onFrame(function(){
+  var p = sectionProgress(hero);
+  if (duration === 0) readDuration();
+  var vp = clamp((p - 0.06) / 0.86, 0, 1);
+  var target = vp * (duration - 0.05);
+  vt = Math.abs(target - vt) < 0.002 ? target : lerp(vt, target, 0.16);
+  if (duration > 0 && Math.abs(video.currentTime - vt) > 0.008) { try { video.currentTime = vt; } catch(e){} }
+  var o = easeIO(clamp(p / 0.34, 0, 1));
+  frame.style.clipPath = 'inset(' + lerp(F[0],0,o) + '% ' + lerp(F[1],0,o) + '% ' + lerp(F[2],0,o) + '% ' + lerp(F[3],0,o) + '% round ' + lerp(F[4],0,o) + 'px)';
+  var spread = o * (isMobile ? 40 : 30);
+  hl.style.transform = isMobile ? 'translateY(' + (-spread) + 'vh)' : 'translateX(' + (-spread) + 'vw)';
+  hr.style.transform = isMobile ? 'translateY(' + spread + 'vh)' : 'translateX(' + spread + 'vw)';
+  hl.style.opacity = hr.style.opacity = String(1 - clamp(o * 1.4, 0, 1));
+  sub.style.opacity = cue.style.opacity = String(1 - clamp(p / 0.05, 0, 1));
+  var lb = ease(clamp((p - 0.3) / 0.2, 0, 1)) * (isMobile ? 9 : 10);
+  barT.style.height = barB.style.height = lb + 'vh';
+  var e = ease(clamp((p - 0.8) / 0.14, 0, 1));
+  endBox.style.opacity = String(e); shade.style.opacity = String(e); endBox.style.transform = 'translateY(' + (30 * (1 - e)) + 'px)'; endBox.style.pointerEvents = e > .5 ? 'auto' : 'none';
+  var secs = Math.round(vp * 48 * 3600); var h = Math.floor(secs / 3600), m = Math.floor(secs % 3600 / 60), s = secs % 60;
+  tc.textContent = pad2(h) + ':' + pad2(m) + ':' + pad2(s);
+  if (isMobile) tc.parentElement.style.opacity = String(clamp((p - 0.12) / 0.1, 0, 1));
+});
 
-/* ---- nav ---- */
+/* ---------- nav ---------- */
 var nav = document.getElementById('nav');
-window.addEventListener('scroll', function(){ nav.classList.toggle('solid', window.scrollY > window.innerHeight * 4.2); }, { passive: true });
+onFrame(function(){ var heroBottom = hero.getBoundingClientRect().bottom; nav.classList.toggle('solid', heroBottom < 80); });
 
-/* ---- reveals + counters ---- */
-var io = new IntersectionObserver(function(entries){
-  entries.forEach(function(en){
-    if (!en.isIntersecting) return;
-    en.target.classList.add('in');
-    en.target.querySelectorAll('.count').forEach(function(c){
-      var to = +c.dataset.to, t0 = null;
-      if (reduced) { c.textContent = to; return; }
-      function step(ts){ if (!t0) t0 = ts; var k = clamp((ts - t0) / 1200, 0, 1); c.textContent = Math.round(to * ease(k)); if (k < 1) requestAnimationFrame(step); }
-      requestAnimationFrame(step);
-    });
-    io.unobserve(en.target);
+/* ---------- manifesto: words light up with scroll ---------- */
+var mf = document.getElementById('mf');
+mf.innerHTML = mf.textContent.split(' ').map(function(w){ return '<span class="w">' + w + '</span>'; }).join(' ');
+var words = mf.querySelectorAll('.w');
+onFrame(function(){
+  var r = mf.getBoundingClientRect(), vh = window.innerHeight;
+  var k = clamp((vh * 0.85 - r.top) / (r.height + vh * 0.35), 0, 1);
+  var lit = Math.round(k * words.length);
+  for (var i = 0; i < words.length; i++) words[i].classList.toggle('on', i < lit);
+});
+
+/* ---------- work: before/after wipe with scroll ---------- */
+document.querySelectorAll('.wipe').forEach(function(w){
+  var after = w.querySelector('.after'), edge = w.querySelector('.edge'), state = w.querySelector('.state');
+  onFrame(function(){
+    var r = w.getBoundingClientRect(); if (r.bottom < -50 || r.top > window.innerHeight + 50) return;
+    var p = easeIO(clamp((sectionProgress(w) - 0.12) / 0.62, 0, 1));
+    var x = 100 - p * 100;
+    after.style.clipPath = 'inset(0 0 0 ' + x + '%)';
+    after.style.transform = 'scale(' + lerp(1.08, 1, p) + ')';
+    edge.style.left = x + '%'; edge.style.opacity = p > 0.995 || p < 0.005 ? '0' : '1';
+    state.textContent = p < 0.5 ? 'Phone photo' : 'Finished advert';
   });
-}, { threshold: 0.18 });
-document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
-
-/* ---- before/after sliders ---- */
-document.querySelectorAll('.cmp').forEach(function(box){
-  var input = box.querySelector('input'), after = box.querySelector('.after'), handle = box.querySelector('.handle');
-  function set(v){ after.style.clipPath = 'inset(0 0 0 ' + v + '%)'; handle.style.left = v + '%'; }
-  input.addEventListener('input', function(){ set(input.value); });
-  set(input.value);
 });
 
-/* ---- light parallax ---- */
-var px = document.querySelectorAll('.px');
-if (!reduced) window.addEventListener('scroll', function(){
-  px.forEach(function(el){ var r = el.getBoundingClientRect(); var k = (r.top + r.height/2 - window.innerHeight/2) / window.innerHeight; el.style.transform = 'translateY(' + (k * -24) + 'px)'; });
-}, { passive: true });
-
-/* ---- copy email ---- */
-document.getElementById('copyMail').addEventListener('click', function(){
-  var b = this;
-  navigator.clipboard.writeText('andre@kesis.com.br').then(function(){ b.textContent = 'Copied'; }).catch(function(){ b.textContent = 'Select & copy'; });
+/* ---------- process: rules draw with scroll ---------- */
+document.querySelectorAll('.steps li').forEach(function(li){
+  onFrame(function(){ var r = li.getBoundingClientRect(); var k = clamp((window.innerHeight * 0.9 - r.top) / (window.innerHeight * 0.4), 0, 1); li.style.setProperty('--draw', easeIO(k).toFixed(3)); });
 });
+
+/* ---------- parallax ---------- */
+var pars = document.querySelectorAll('.par');
+onFrame(function(){ if (reduced) return; pars.forEach(function(el){ var r = el.getBoundingClientRect(); var c = r.top + r.height / 2 - window.innerHeight / 2; el.style.transform = 'translateY(' + (c * parseFloat(el.dataset.speed)) + 'px)'; }); });
+
+/* ---------- heading reveals ---------- */
+var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: 0.2 });
+document.querySelectorAll('.rise').forEach(function(el, i){ el.style.transitionDelay = (el.previousElementSibling && el.previousElementSibling.classList.contains('rise') ? 140 : 0) + 'ms'; io.observe(el); });
+
+/* ---------- reel videos: play only when visible ---------- */
+var vio = new IntersectionObserver(function(es){ es.forEach(function(e){ var v = e.target; if (e.isIntersecting) { var pr = v.play(); if (pr && pr.catch) pr.catch(function(){}); } else { v.pause(); } }); }, { threshold: 0.15 });
+document.querySelectorAll('.clip video').forEach(function(v){ if (reduced) { v.removeAttribute('autoplay'); v.pause(); } else vio.observe(v); });
+
+/* ---------- FAQ ---------- */
+document.querySelectorAll('.q button').forEach(function(b){ b.addEventListener('click', function(){ var q = b.parentElement; var open = q.classList.toggle('open'); b.setAttribute('aria-expanded', open ? 'true' : 'false'); }); });
+
+/* ---------- magnetic buttons ---------- */
+if (!reduced && window.matchMedia('(pointer:fine)').matches) {
+  document.querySelectorAll('.mag').forEach(function(b){
+    var tx = 0, ty = 0, cx = 0, cy = 0;
+    b.addEventListener('mousemove', function(e){ var r = b.getBoundingClientRect(); tx = (e.clientX - r.left - r.width/2) * 0.28; ty = (e.clientY - r.top - r.height/2) * 0.38; });
+    b.addEventListener('mouseleave', function(){ tx = 0; ty = 0; });
+    onFrame(function(){ cx = lerp(cx, tx, 0.15); cy = lerp(cy, ty, 0.15); if (Math.abs(cx) + Math.abs(cy) > 0.05 || tx || ty) b.style.transform = 'translate(' + cx.toFixed(2) + 'px,' + cy.toFixed(2) + 'px)'; });
+  });
+}
+
+/* ---------- copy email ---------- */
+document.getElementById('copy').addEventListener('click', function(){ var b = this; navigator.clipboard.writeText('andre@kesis.com.br').then(function(){ b.textContent = 'Copied'; setTimeout(function(){ b.textContent = 'andre@kesis.com.br'; }, 1800); }).catch(function(){}); });
+
+/* ---------- one loop drives everything ---------- */
+function loop(time){
+  if (lenis) lenis.raf(time);
+  for (var i = 0; i < tickers.length; i++) tickers[i]();
+  if (!document.hidden) requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+document.addEventListener('visibilitychange', function(){ if (!document.hidden) requestAnimationFrame(loop); else for (var i = 0; i < tickers.length; i++) tickers[i](); });
+window.addEventListener('scroll', function(){ if (document.hidden) for (var i = 0; i < tickers.length; i++) tickers[i](); }, { passive: true });
 </script>
 </body>
 </html>
